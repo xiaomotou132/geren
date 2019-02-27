@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo1</title>
+</head>
+<body>
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+
+    var obj1={
+        name:"lisi",
+        age:12
+    }
+    var obj2={
+        age:23,
+        sex:"男"
+    }
+
+    for (var i = 0; i < obj2.length; i++) {
+        console.log(obj2[i])
+        console.log("sdf")
+
+    }
+
+    /*function  extend(obj1,obj2) {
+        var obj=obj1
+        for(var i in obj2){
+            obj1[i]=obj2[i]
+        }
+        return obj
+    }
+    console.log(extend(obj1,obj2))*/
+
+    var obj3=$.extend(obj1,obj2)
+    console.log(obj3)
+
+
+</script>
+
+
+
+
+</body>
+</html>
